@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
        vb.memory = 2048
     end
     server.vm.hostname = "m103"
-    server.vm.network :private_network, ip: "192.168.103.100"
+    server.vm.network :private_network, ip: "18.191.138.72"
     server.vm.provision :shell, path: "provision-mongod", args: ENV['ARGS']
   end
 end
